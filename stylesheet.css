@@ -1,0 +1,340 @@
+body, html {
+	font-family: "Lato", sans-serif;
+	color: #777;
+}
+a:hover, a:focus, a:active, a:visited, a:link {
+	text-decoration: none;
+}
+.title {
+	text-align: center;
+	letter-spacing: 0.4rem;
+}
+hr {
+	background-color: #777;
+}
+hr.divider {
+	background-color: black;
+}
+
+/*==================================================*/
+/*==================== TOP MENU ====================*/
+
+.navbar {
+	background: rgba(40, 0, 10, 0.9);
+	-o-transition: all .6s;
+    -moz-transition: all .6s;
+    -webkit-transition: all .6s;
+    -ms-transition: all .6s;
+    transition: all .6s;
+	backface-visibility: hidden;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+.navbar-nav {
+    font-size: 0.9rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+    border: 0;
+}
+.navbar .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+.navbar .navbar-nav .nav-link:focus {
+    color: #fff;
+    outline: 0;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.navbar-brand {
+	margin: auto;
+    width: 18.75rem;
+    height: 2.688rem;
+    background: url(./images/ls-logo.png) left no-repeat;
+	background-size: contain;
+}
+
+/*==================================================*/
+/*====================== HOME ======================*/
+
+#home {
+	height: 100vh;
+	width: 100%;
+	background-image: url("./images/home.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.arrow {
+	position: absolute;
+	display: block;
+	bottom: 4rem;
+	left: 50%;	
+}
+.parallax-container {
+	height: auto;   
+	padding: 4rem;
+}
+.content {
+	max-width: 1280px;
+	margin: auto;
+}
+.about-text {
+	background-color: rgba(255, 255, 255, 0.6);
+	margin-left: auto;
+	padding: 3rem 3rem;
+	width: 60%;
+}
+.about-text p {
+	font-size: 1.2rem;
+	font-family: 'Times New Roman', Times, serif;
+	color: #000;
+}
+a .fa-angle-double-down {
+	font-size: 2rem;
+	position: relative;
+	color: white;
+}
+a .fa-angle-double-down:hover {
+	color: grey;
+	cursor: pointer;
+}
+
+/*==================================================*/
+/*====================== MUSIC =====================*/
+
+
+
+/*==================================================*/
+/*===================== VIDEOS =====================*/
+
+
+
+/*==================================================*/
+/*====================== GEAR ======================*/
+
+
+
+/*==================================================*/
+/*====================== FACTS =====================*/
+
+
+
+/*==================================================*/
+/*================== ARROW TO TOP ==================*/
+
+#return-to-top {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    border-radius: 2rem;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 1rem;
+    top: 0.8rem;
+    font-size: 1.2rem;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 0.4rem;
+}
+
+/*==================================================*/
+/*===================== FOOTER =====================*/
+
+footer {
+	background: rgb(39, 39, 39);
+	font-size: 0.9rem;
+	height: 11rem;
+	letter-spacing: 0.0625rem;
+}
+footer .row {
+    padding: 0 1rem;
+    margin: 0 auto;
+    max-width: 85rem;
+    display: block;
+}
+footer p, footer a, footer li a {
+    color: #808080;
+}
+footer a:hover {
+	color: white;
+}
+footer p {
+	text-align: center;
+	font-size: 0.8rem;
+	margin-top: 0.8rem;
+}
+footer .footer-container {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .footer-container .footer-nav {
+    text-transform: uppercase;
+    padding: 2rem 0;
+}
+footer .footer-container .footer-nav li {
+    display: inline-block;
+    list-style: none;
+}
+footer .footer-container .footer-nav li + li {
+    margin-left: 1rem;
+}
+footer .footer-container .footer-icons {
+    width: 12rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+/*==================================================*/
+/*==================== ANIMATION ===================*/
+
+/* ----Slide In ----*/
+.slideanim {
+	visibility:hidden;
+}
+.slide {
+	animation-name: slide;	/* The name of the animation */
+	-webkit-animation-name: slide;
+	animation-duration: 1s;	/* The duration of the animation */
+	-webkit-animation-duration: 1s;
+	visibility: visible; /* Make the element visible */
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+/* ---- Scroll-Arrow ----*/
+a .fa-angle-double-down {
+	animation-name: arrow-float;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+}
+@keyframes arrow-float {
+	0% {
+		top: 0rem;
+		opacity: 0;
+	}
+	50% {
+		top: 1rem;
+		opacity: 1;
+	}
+	100% {
+		top: 3rem;
+		opacity: 0;
+	}
+}
+
+/*==================================================*/
+/*=================== RESPONSIVE ===================*/
+
+/* Phones / Tablets */
+@media (min-width: 320px) and (max-width: 859px) {
+	.navbar-dark .navbar-toggler {
+    	border-color: #444;
+    }
+    .navbar-dark .navbar-toggler:focus {
+    	background: #333; outline: 0;
+    }
+    .navbar-expand-md .navbar-nav .nav-link {
+    	padding-top: 0.3rem;
+    	padding-bottom: 0.3rem;
+	}
+	.navbar-brand {
+		width: 14rem;
+	}
+	.parallax-container-2 {
+		padding: 0rem;
+	}
+	.about-text {
+		width: auto;
+		padding: 3rem 1rem;
+		text-align: center;
+	}
+	footer {
+		height: 13rem;
+	}
+	footer p {
+		font-size: 0.8rem;
+		margin-top: 2rem;
+	}
+	footer .footer-container {
+        flex-direction: column;
+    }
+    footer .footer-container .footer-nav {
+		padding: 1rem 0 0;
+		text-align: center;
+		line-height: 2rem;
+		font-size: 1rem;
+    }
+    footer .footer-container .footer-icons {
+          width: 15rem;
+          font-size: 1.7em;
+          margin: 0;
+    }
+}
+
+/* Tablets - Landscape */
+@media (min-width: 860px) and (max-width: 1279px) {
+
+}
+
+/* Laptops / Small Desktops */
+@media (min-width: 1280px) and (max-width: 1439px) {
+	footer .row {
+		max-width: 70rem;
+	}
+}
