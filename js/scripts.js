@@ -1,5 +1,5 @@
 /*==================================================*/
-/*================ Smooth Scrolling ================*/
+/*================ SMOOTH SCROLLING ================*/
 
 $(document).ready(function(){
 	$(".navbar a, footer a, .arrow a").on('click', function(event) {	// Where put smooth scrolling
@@ -16,20 +16,20 @@ $(document).ready(function(){
 })
 
 /*==================================================*/
-/*================== SlideIn Animation =================*/
+/*================ SLIDEIN ANIMATION ===============*/
 
 $(window).scroll(function() {
 	$(".slideanim").each(function(){
 		var pos = $(this).offset().top;
 		var winTop = $(window).scrollTop();
-    	if (pos < winTop + 600) {
-    		$(this).addClass("slide");
-    	}
+		if (pos < winTop + 600) {
+			$(this).addClass("slide");
+		}
 	});
 });
 
 /*==================================================*/
-/*================== Scroll to Top =================*/
+/*================== SCROLL TO TOP =================*/
 
 $(window).scroll(function() {
 	if ($(this).scrollTop() >= 1000) {      // If page is scrolled more than 1000px
