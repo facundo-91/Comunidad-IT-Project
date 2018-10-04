@@ -1,5 +1,5 @@
 body, html {
-	font-family: "Lato", sans-serif;
+	font-family: "Noto Sans", sans-serif;
 	color: #777;
 }
 a:hover, a:focus, a:active, a:visited, a:link {
@@ -21,10 +21,6 @@ hr.divider {
 
 .navbar {
 	background: rgba(40, 0, 10, 0.9);
-	-o-transition: all .6s;
-    -moz-transition: all .6s;
-    -webkit-transition: all .6s;
-    -ms-transition: all .6s;
     transition: all .6s;
 	backface-visibility: hidden;
 	position: absolute;
@@ -140,7 +136,62 @@ iframe {
 /*==================================================*/
 /*====================== GEAR ======================*/
 
-
+.gear-list {
+	background-color: rgba(255, 255, 255, 0.6);
+	padding: 3rem 3rem;
+	min-height: 36rem;
+}
+.gear-list .row {
+	margin: 0;
+}
+.gear-list .row .col-2,
+.gear-list .row .col-10 {
+	padding-left: 0;
+	padding-right: 0;
+}
+.nav-tabs .nav-link.active {
+    background-color: #fff;
+    color: #000;
+    border-left: .5rem solid #888;
+    border-right: 0;
+}
+.nav-tabs .nav-link {
+	background-color: #eee;
+	color: #888;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.nav-tabs .nav-link.active:hover {
+	background-color: #fff;
+	color: #000;
+	border-top: 1px solid #ddd;
+}
+.nav-tabs .nav-link:hover {
+	background-color: #666;
+	border-top: 1px solid #666;
+	color: #fff;
+}
+.tab-content>.active {
+    background: #ffffff;
+    border: 1px solid #ddd;
+}
+#v-pills-tabContent hr {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.text-gear {
+	margin: 1rem 1rem 0 0;
+	font-size: 1.2rem;
+	text-align: left;
+}
+.responsive {
+	width: 100%;
+	max-width: 350px;
+	height: auto;
+	margin: .5rem;
+}
 
 /*==================================================*/
 /*====================== FACTS =====================*/
