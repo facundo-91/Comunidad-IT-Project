@@ -45,3 +45,12 @@ $('#return-to-top').click(function() {      // When arrow is clicked
 });
 
 /*==================================================*/
+/*============ SCROLL ON CLICK OF VIDEO ============*/
+
+$('.vid-item').click(function() {			// When video is clicked
+	$('body,html').animate({
+		scrollTop : 210						// Scroll to top of body
+	}, 500);
+});
+
+/*==================================================*/
