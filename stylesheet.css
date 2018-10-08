@@ -306,7 +306,41 @@ iframe {
 /*==================================================*/
 /*====================== FACTS =====================*/
 
-
+.parallax-container-2 {
+	height: 84.6vh;   
+	padding: 6rem 4rem;
+}
+.facts-list {
+	background-color: rgba(255, 255, 255, 0.6);
+	padding: 3rem;
+	text-align: center;
+	min-height: 40rem;
+}
+#factDisplay {
+	font-size: 2rem;
+	font-family: 'Cinzel', serif;
+	font-weight: 600;
+	margin: 3rem 2rem;
+	min-height: 20rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#fact-btn {
+	font-size: 1.2rem;
+	letter-spacing: 0.1rem;
+	margin: 1rem;
+	padding: 0.5rem 1rem;
+	background-color: transparent;	
+	color: #272727;
+	border: solid 2px #272727;
+	border-radius: .5rem;
+	transition: all .3s ease-in-out;
+}
+#fact-btn:hover {
+	background-color: #272727;
+	color:#fff;
+}
 
 /*==================================================*/
 /*================== ARROW TO TOP ==================*/
@@ -518,5 +552,8 @@ a .fa-angle-double-down {
 @media (min-width: 1280px) and (max-width: 1439px) {
 	footer .row {
 		max-width: 70rem;
+	}
+	.parallax-container-2 {
+		height: auto;
 	}
 }
