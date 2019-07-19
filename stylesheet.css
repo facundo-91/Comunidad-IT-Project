@@ -1,11 +1,12 @@
 body, html {
-	font-family: "Noto Sans", sans-serif;
+	font-family: 'Muli', sans-serif;
 	color: #777;
 }
 a:hover, a:focus, a:active, a:visited, a:link {
 	text-decoration: none;
 }
 .title {
+	font-size: 2rem;
 	text-align: center;
 	letter-spacing: 0.4rem;
 }
@@ -26,9 +27,10 @@ hr.divider {
 	position: absolute;
 	left: 0;
 	right: 0;
+	z-index: 10;
 }
 .navbar .navbar-nav .nav-link {
-	font-size: 0.9rem;
+	margin: 0 0.5rem;
 	text-transform: uppercase;
 	color: #fff;
 	color: rgba(255, 255, 255, 0.8);
@@ -41,10 +43,6 @@ hr.divider {
 	color: #fff;
 	outline: 0;
 }
-.navbar-expand-md .navbar-nav .nav-link {
-	padding-left: 1rem;
-	padding-right: 1rem;
-}
 
 /*==================================================*/
 /*====================== HOME ======================*/
@@ -56,12 +54,14 @@ hr.divider {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	display: flex;
+	justify-content: center;
+	z-index: 0;
 }
 .arrow {
 	position: absolute;
-	display: block;
 	bottom: 4rem;
-	left: 50%;	
+	z-index: 1;
 }
 
 /*==================================================*/
@@ -75,7 +75,7 @@ hr.divider {
 	max-width: 1280px;
 	margin: auto;
 }
-.about-text {
+.about {
 	background-color: rgba(255, 255, 255, 0.6);
 	margin-left: auto;
 	padding: 3rem 3rem;
@@ -109,7 +109,7 @@ a .fa-angle-double-down:hover {
 	width: 60%;
 	text-align: center;
 }
-.music-list p {
+.album-title {
 	margin-top: 3rem;
 }
 .music {
@@ -148,9 +148,8 @@ iframe {
 }
 /*  VIDEOS PLAYLIST */
 #vid-title {
-	font-family: 'Roboto', sans-serif;
-	font-size: 2.2rem;
-	font-weight: bold;
+	font-size: 2rem;
+	font-weight: 400;
 	text-align: left;
 	text-transform: uppercase;
 	text-shadow: 0 0 30px #fff;	
@@ -214,9 +213,8 @@ iframe {
 }
 .vid-item .desc {
 	font-size: 1rem;
-	font-weight: 400;
+	font-weight: 200;
 	text-align: center;
-	margin: 0.5rem 0;
 	color: #000;
 }
 .vid-item:hover {
@@ -279,7 +277,8 @@ iframe {
 	float: right;
 	width: 60%;
 	margin: 1.5rem 1rem 1rem 0;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
+	font-weight: 200;
 	line-height: 2.4rem;
 	text-align: left;
 }
@@ -490,10 +489,12 @@ a .fa-angle-double-down {
 		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 	}
 	.navbar-expand-md .navbar-nav .nav-link {
+		font-size: 1.2rem;
+		letter-spacing: 0.3rem;
+		color: #fff;
 		padding-top: 0.3rem;
 		padding-bottom: 0.3rem;
-		font-size: 1.3rem;
-		letter-spacing: 0.2rem;
+		margin: 1.5rem 0;
 	}
 	.navbar-brand {
 		margin: 0 auto;
@@ -503,14 +504,21 @@ a .fa-angle-double-down {
 		height: 20px;
 	}
 	.navbar-nav {
-		height: 70vh;
-		justify-content: space-evenly;
+		height: 93vh;
+		justify-content: center;
 		align-items: center;
 	}
 	.parallax-container {
 		padding: 0rem;
 	}
-	.about-text {
+	hr {
+		margin: 1rem;
+	}
+	.title {
+		font-size: 2rem;
+		margin: 0rem 1rem;
+	}
+	.about {
 		width: auto;
 		padding: 3rem 1rem;
 		text-align: center;
@@ -523,33 +531,45 @@ a .fa-angle-double-down {
 	.videos-list {
 		padding: 6rem 0rem;
 	}
-	.videos-list .title {
-		margin: 0rem 1rem;
-	}
 	#vid-title {
 		font-size: 1.4rem;
 		margin: 1rem; 
 	}
+	.vid-item .desc {
+		font-size: 1.1rem;
+	}
+	.vid-item:hover {
+		background: initial;
+		cursor: initial;
+	}
+	.vid-item:hover .desc {
+		color: initial;
+	}
 	.gear-list {
 		padding: 6rem 0 0 0;
 	}
-	.gear-list .title {
-		margin: 0 1rem;
-	}
 	.gear-list .nav-link {
-		font-size: 0.9rem;
+		font-size: 0.875rem;
+		padding: 0.5rem 0.75rem;
+	}
+	.gear-list .nav-link:hover {
+		background-color: initial;
+		color: initial;
+		border-top: solid 5px #333;
 	}
 	.violin, .string, .accessory, .effect {
 		flex-direction: column;
 	}
 	.left-pic {
-		width: 92%;
+		width: 100%;
+		margin: 1rem 0;
 	}
 	.right-text {
-		width: 96%;
-		margin: 0 0.5rem;
 		font-size: 1rem;
-		text-align: center;
+		line-height: 1.5rem;
+		width: 100%;
+		margin: 0;
+		padding: 0 0.5rem;
 	}
 	.parallax-container-2 {
 		height: 100vh;
@@ -559,16 +579,23 @@ a .fa-angle-double-down {
 		padding: 2rem 1rem 0;
 		min-height: 42rem;
 	}
-	.facts-list .title {
-		font-size: 2rem;
-	}
 	#factDisplay {
 		font-size: 1.5rem;
 		margin: 0;
 		min-height: 22.5rem;
 	}
+	#fact-btn:hover {
+		background-color: initial;
+		color: initial;
+	}
+	#fact-btn:active {
+		background-color: #272727;
+		color:#fff;
+		font-size: 1rem;
+	}
 	footer {
 		height: 13rem;
+		letter-spacing: normal;
 	}
 	footer p {
 		font-size: 0.8rem;
@@ -578,10 +605,10 @@ a .fa-angle-double-down {
 		flex-direction: column;
 	}
 	footer .footer-container .footer-nav {
+		font-size: 0.9375rem;
+		line-height: 2rem;
 		padding: 1rem 0 0;
 		text-align: center;
-		line-height: 2rem;
-		font-size: 1rem;
 	}
 	footer .footer-container .footer-icons {
 		width: 15rem;
