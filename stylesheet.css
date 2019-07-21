@@ -498,6 +498,7 @@ a .fa-angle-double-down {
 	}
 	.navbar-brand {
 		margin: 0 auto;
+		padding-right: 3.375rem;
 	}
 	.navbar-brand img {
 		width: 200px;
